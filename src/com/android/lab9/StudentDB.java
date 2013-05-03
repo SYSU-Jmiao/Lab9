@@ -44,7 +44,7 @@ public class StudentDB extends SQLiteOpenHelper{
 	
 	public Student update(int studentId) {
 		Student stu = null;
-		SQLiteDatabase db = getWritableDatabase();
+		SQLiteDatabase db = getReadableDatabase();
 		String whereClause = "_id = ?";
 		
 		return stu;
